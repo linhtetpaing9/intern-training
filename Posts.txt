@@ -1,0 +1,51 @@
+
+Posts
+
+post->comments ( hasMany )
+post->replies ( hasManyThrough )
+
+- id ( primary )
+- title
+- body
+- user_id
+
+
+Comments
+comment->post ( belongsTo )
+comment->replies ( hasMany )
+
+- id
+- body
+- user_id
+- post_id
+
+Reply
+reply->comment ( belongsTo )
+reply->post ( belongsTo T)
+
+- id
+- body
+- user_id
+- comment_id
+
+
+-> create migration , model and controller
+-> model fillable or guarded properties
+saved
+-> before crud intro about seeding and faker
+saved
+-> routing
+-> styling and layout
+-> laravel mixing
+saved
+-> git upload
+
+-> post crud
+
+-> add relations in model
+-> comment create in individual post
+-> reply in individual comment in post
+
+
+
+
